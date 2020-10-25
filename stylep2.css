@@ -3,6 +3,8 @@ body{
     font-family: 'Raleway', sans-serif;
     margin:0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -14,17 +16,18 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     margin: 1.5em;
-    width: 100%;
 }
 
 #logo{
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    width: 100%;
 }
 
+#logo_img, #nav{
+    display: inline;
+}
 
-/* Header liens de navigation */
-
+/* HEADER liens de navigation */
 
 nav {
     width: 100%;
@@ -93,38 +96,45 @@ header h2{
     padding: 1em;
 }
 
-.barre_recherche > input[type="text"],
-.barre_recherche > i.fas {
+.barre_recherche input[type="text"],.barre_recherche i.fas{
     display: inline;
 }
 
-.barre_recherche > i.fas {
+.barre_recherche i.fas{
     padding: 1em;
     background-color: #DEEBFF;
-    border-bottom-left-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-}
-
-.barre_recherche input{
-    height: 2.6em;
-    margin: 0;
-    border: none;
-    padding-left: 1em;
-    font-weight: bold;
-    margin: 0;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;  
 }
 
 .buttonrecherche{
     background-color: #0065FC;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
     color: white;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+    height: 2.6em;
+    width: 7em;
+    border:none;
+    padding-left: 1em;
+    font-weight: bold;
+    margin:0;
 }
 
-.barre_recherche input[type="search"]{
-    border-style: solid;
+.textsearch{
+    border-style:solid;
     border-color: #DEEBFF;
     border-right: none;
+    margin:0;
+    height: 2.6em;
+}
+
+#barre_recherche, #filtres{
+    width:100%;
+}
+
+/* HEADER Filtres */
+#filtres input, #filtres i.fas, #filtres h3, .filtresimg{
+    display: inline;
 }
 
 .buttonfiltre{
@@ -141,26 +151,32 @@ header h2{
     padding-left: 2.5em;
 }
 
-#filtres{
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
+#filtres i.fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 1em;
+    align-content: center;
+    border-radius: 2em;
     height: 2em;
+    width: 2em;
+}
+
+/* HEADER TITRE 3 */
+
+#titreinfo{
+    display: inline;
+    width: 100%;
+    margin-top: 1em;
+}
+
+#titreinfo i.fas, #titreinfo h2{
+    display: inline;
+    padding: 1em;
 }
 
 header h3{
     font-size:1em;
     padding-right: 1em;  
-}
-
-#filtres i{
-    color: #0065FC;
-    background-color: #DEEBFF;
-    padding: 0.2em;
-    align-content: center;
-    border-radius: 2em;
-    height: 2em;
-    width: 2em;
 }
 
 /* SECTION 1 */
@@ -170,8 +186,8 @@ header h3{
 }
 
 #section1 img{ 
-    max-height: 25em;
-    max-width: 15em;
+    height: 60%;
+    width: 100%;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
@@ -195,13 +211,14 @@ h3 a{
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1em;
+    margin: 0.5em;
     background-color: white;
-    padding: 0.4em;
+    padding: 0.2em;
     border-radius: 1em;
-    max-height: 14em;
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
-    align-items: center;
+    justify-content: space-around;
+    width : 28%;
+    height: 35%;
 }
 
 #section1 h1{
@@ -238,12 +255,13 @@ h3 a{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1.5em;
+    margin-top: 0;
 }
 
 #section1, #section2{
     background-color: #DEEBFF;
     border-radius : 2em;
-    padding: 1.5em;
+    padding: 1em;
     margin: 1em;
     display: flex;
     flex-direction: row;
@@ -254,7 +272,7 @@ h3 a{
     font-size:1.2em; 
     text-align: left;
     font-weight: bold;
-    padding-left: 1.5em;
+    padding-left: 1em;
 }
 
 #section1 h2, #section2 h2{
@@ -275,14 +293,16 @@ h3 a{
 /* SECTION 2 */
 #section2{
     flex: 1;
+    width: 100%;
+}
+
+#titre_s2 i, #titre_s2 h1{
+    display: inline;
 }
 
 #titre_s2 i{
     float: right;
-}
-
-#titre_s2 h1{
-    float: left;
+    padding-right: 2em;
 }
 
 #titre_s2{
@@ -292,32 +312,29 @@ h3 a{
 .logements_section2{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    margin: 1.5em;
+    margin: 1em;
     background-color: white;
     border-radius: 1.5em;
-    padding-right: 3em;
-    padding-left: 0.5em;
-    max-height: 9em;
+    padding-left: 0.3em;
     align-items: center;
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
+    width : 90%;
+    height: 28%;
 }
 
 #section2 img{
-    max-height: 8em;
-    max-width: 8em;
+    height: 93%;
+    width: 40%;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .textimgs2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 1.5em;
-    padding-bottom: 2.0em;
+    padding-left: 1em;
+    padding-bottom: 1em;
 }
 
 
@@ -353,7 +370,7 @@ h3 a{
     background-color: white;
     border-radius: 1.5em; 
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
-    max-width: 18em;
+    max-width: 20em;
     align-items: center;
     align-content: stretch;
     margin-top: 0;
@@ -362,7 +379,9 @@ h3 a{
 #Blocs_s3{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 30em;
 }
 
 
@@ -370,13 +389,13 @@ h3 a{
     display: flex;
     justify-content: space-between;
     max-height: 25em;
-}
 
+}
 
 /* Section 3 Bloc 1*/
 .bloc1 img{
-    max-height: 20em;
-    max-width: 18em;
+    max-height: 25em;
+    max-width: 20em;
 }
 
 .bloc1{
@@ -385,8 +404,8 @@ h3 a{
 
 /* Section 3 Bloc 2 */
 .bloc2 img{
-    max-height: 10em;
-    max-width: 18em;
+    max-height: 15em;
+    max-width: 20em;
 }
 
 .bloc2{
