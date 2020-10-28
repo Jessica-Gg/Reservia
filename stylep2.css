@@ -15,7 +15,9 @@ header{
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 1.5em;
+    margin: 2.5em;
+    margin-top: 1.5em;
+    margin-bottom:1.5em;
 }
 
 #logo{
@@ -25,6 +27,10 @@ header{
 
 #logo_img, #nav{
     display: inline;
+}
+
+#logo_img{
+    float: left;
 }
 
 /* HEADER liens de navigation */
@@ -92,30 +98,31 @@ header h2{
 /* HEADER Barre de recherche et filtres */
 
 .barre_recherche{
-    display: inline;
-    padding: 1em;
+    display: inline-block;
+    margin: 1em;
+    margin-left: 0em;
+    
 }
 
 .barre_recherche input[type="text"],.barre_recherche i.fas{
-    display: inline;
+    display: inline-block;
 }
 
 .barre_recherche i.fas{
-    padding: 1em;
     background-color: #DEEBFF;
     border-top-left-radius: 0.7em;
-    border-bottom-left-radius: 0.7em;  
+    border-bottom-left-radius: 0.7em;
+    padding: 0.8em;
 }
 
 .buttonrecherche{
     background-color: #0065FC;
-    border-top-right-radius: 0.7em;
-    border-bottom-right-radius: 0.7em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
     color: white;
-    height: 2.6em;
-    width: 7em;
+    height: 3em;
+    width: 7.5em;
     border:none;
-    padding-left: 1em;
     font-weight: bold;
     margin:0;
 }
@@ -125,7 +132,11 @@ header h2{
     border-color: #DEEBFF;
     border-right: none;
     margin:0;
-    height: 2.6em;
+    height: 3em;
+    width: 14.5em;
+    padding-left: 1em;
+    margin-right: -3em;
+    font-weight: bold;
 }
 
 #barre_recherche, #filtres{
@@ -138,30 +149,43 @@ header h2{
 }
 
 .buttonfiltre{
-    border-radius:1em;
+    border-radius:2em;
     font-weight: bold;
     font-size:1em;
-    height: 2em;
+    height: 2.5em;
     width: auto;
     margin: 0.5em;
     align-items: center;
     background-color:white;
     border-style: solid;
-    border-color: darkgrey;
+    border-color: lightgray;
     padding-left: 2.5em;
+    padding-right: 0.8em;
 }
 
 #filtres i.fas{
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 1em;
+    padding: 0.7em;
     align-content: center;
     border-radius: 2em;
-    height: 2em;
-    width: 2em;
+    height: 1em;
+    width: 1em;
+    position: relative;
+    margin-right: -3em;
 }
 
-/* HEADER TITRE 3 */
+#filtres > div:nth-child(3) > i{
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+}
+
+header h3{
+    font-size:1em;
+    padding-right: 1em;  
+}
+
+/* HEADER 3eme ligne */
 
 #titreinfo{
     display: inline;
@@ -171,12 +195,19 @@ header h2{
 
 #titreinfo i.fas, #titreinfo h2{
     display: inline;
-    padding: 1em;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 
-header h3{
-    font-size:1em;
-    padding-right: 1em;  
+
+#titreinfo i.fas{
+    color: #0065FC;
+    border-color: #DEEBFF;
+    border-style: solid;
+    border-radius: 2em; 
+    padding: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
 /* SECTION 1 */
@@ -193,52 +224,52 @@ header h3{
 }
 
 h3 a{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
     color: black;
     text-decoration: none;
     padding-left: 2em;
+    margin-top: 0.5em;
 }
 
 .textimg1{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 0.5em;
+    margin: 0.5em;
+    margin-bottom:0;
 }
 
 .logements_section1{
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0.5em;
+    margin: 0.8em;
     background-color: white;
     padding: 0.2em;
     border-radius: 1em;
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
     justify-content: space-around;
     width : 28%;
-    height: 35%;
+    height: 38%;
 }
 
 #section1 h1{
     width: 100%;
+    margin-bottom: 0;
 }
-
-/* SECTIONS 1 ET 2 */
 
 /* Selecteurs de notation en etoiles*/
 
 .rating{
     display: flex;
     flex-direction:row-reverse;
-    align-items: flex-start baseline;
 }
 
 .rating a {
     color: darkgrey;
-	text-decoration: none;
-    font-size: 1.5em;
+	text-decoration:none;
+    font-size: 1.2em;
 	transition: color .4s;
 }
 
@@ -249,6 +280,8 @@ h3 a{
     color: blue;
     cursor: pointer;
 }
+
+/* SECTIONS 1 ET 2 */
 
 #sections1_2{
     display: flex;
@@ -276,24 +309,25 @@ h3 a{
 }
 
 #section1 h2, #section2 h2{
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: left;
-    font-weight: bold;
+    font-weight:bold;
     margin: 0em;
-    padding-top: 1em;
 }
 
 #section1 h3, #section2 h3{
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: left;
-    margin: 0;
+    margin:0;
     padding-top: 0.3em;
+    text-decoration: none;
 }
 
 /* SECTION 2 */
 #section2{
     flex: 1;
     width: 100%;
+    padding-bottom: 1em;
 }
 
 #titre_s2 i, #titre_s2 h1{
@@ -307,6 +341,7 @@ h3 a{
 
 #titre_s2{
     width: 100%;
+    margin-top:1em;
 }
 
 .logements_section2{
@@ -335,17 +370,22 @@ h3 a{
     align-items: flex-start;
     padding-left: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
 }
 
+
+#section2 rating >a{
+    padding-top:1em;
+    align-items: baseline;
+}
 
 /* SECTION 3 */
 #section3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: stretch;
-    margin: auto;
+    align-items: stretch;
+    margin: 2.5em;
 }
 
 #section3 h1{
@@ -366,11 +406,10 @@ h3 a{
 .activites{
     display: flex;
     flex-direction: column;
-    margin: 1.5em;
+    margin: 1em;
     background-color: white;
     border-radius: 1.5em; 
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
-    max-width: 20em;
     align-items: center;
     align-content: stretch;
     margin-top: 0;
@@ -379,23 +418,22 @@ h3 a{
 #Blocs_s3{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-height: 30em;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 
 .activitebloc1, .activitebloc2{
     display: flex;
     justify-content: space-between;
-    max-height: 25em;
-
+    flex-wrap: wrap;
 }
 
 /* Section 3 Bloc 1*/
 .bloc1 img{
     max-height: 25em;
-    max-width: 20em;
+    max-width: 18em;
 }
 
 .bloc1{
@@ -405,14 +443,13 @@ h3 a{
 /* Section 3 Bloc 2 */
 .bloc2 img{
     max-height: 15em;
-    max-width: 20em;
+    max-width: 18em;
 }
 
 .bloc2{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-height: 25em;
+    justify-content: space-around;
 }
 
 /* FOOTER */
@@ -420,6 +457,7 @@ footer{
     display: flex;
     padding-top: 1em;
     background-color: #DEEBFF;
+    padding-bottom: 1em;
 }
 
 footer p, footer ul{
