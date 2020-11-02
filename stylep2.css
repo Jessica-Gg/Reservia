@@ -59,8 +59,9 @@ nav a:hover{
     color:grey;
 }
 
-ul a:focus{
-    text-decoration: overline #0065FC;
+header li:nth-child(1)> a{
+    border-top: solid #0065FC;
+    padding-top: 2.3em;
 }
 
 nav a:visited{
@@ -85,13 +86,13 @@ header img{
 }
 
 header h1{
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bold;  
 }
 
 header h2{
-    font-size:0.8em;
-    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 
@@ -159,7 +160,7 @@ header h2{
     background-color:white;
     border-style: solid;
     border-color: lightgray;
-    padding-left: 2.5em;
+    padding-left: 3em;
     padding-right: 0.8em;
 }
 
@@ -195,8 +196,10 @@ header h3{
 
 #titreinfo i.fas, #titreinfo h2{
     display: inline;
-    text-decoration: none;
-    font-size: 0.9em;
+}
+
+#titreinfo h2{
+    padding-top: 1em;
 }
 
 
@@ -208,6 +211,9 @@ header h3{
     padding: 0.5em;
     padding-left: 0.8em;
     padding-right: 0.8em;
+    float: left;
+    margin-right: 1em;
+    font-size : 0.7em;
 }
 
 /* SECTION 1 */
@@ -286,7 +292,7 @@ h3 a{
 #sections1_2{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     margin: 1.5em;
     margin-top: 0;
 }
@@ -320,7 +326,7 @@ h3 a{
     text-align: left;
     margin:0;
     padding-top: 0.3em;
-    text-decoration: none;
+    font-weight:400;
 }
 
 /* SECTION 2 */
@@ -370,14 +376,16 @@ h3 a{
     align-items: flex-start;
     padding-left: 1em;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
 }
 
-
-#section2 rating >a{
-    padding-top:1em;
+#image_section2 > div a{
+    padding-top: 1.5em;
     align-items: baseline;
 }
+
+
 
 /* SECTION 3 */
 #section3{
@@ -386,6 +394,7 @@ h3 a{
     flex-wrap: wrap;
     align-items: stretch;
     margin: 2.5em;
+    justify-content: space-around;
 }
 
 #section3 h1{
@@ -418,7 +427,6 @@ h3 a{
 #Blocs_s3{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: auto;
     flex-wrap: wrap;
 }
@@ -455,14 +463,27 @@ h3 a{
 /* FOOTER */
 footer{
     display: flex;
-    padding-top: 1em;
-    background-color: #DEEBFF;
-    padding-bottom: 1em;
+    flex-direction: row;
+    padding-top: 1.5em;
+    background-color: #DEEBFF;    
+}
+
+#liensfooter{
+    margin-left:2.5em;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2em;
 }
 
 footer p, footer ul{
     font-size: 1em;
 }
+
+
+footer ul{
+    margin-top: 0em;
+}
+
 footer h1{
     font-size: 1.3em;
     padding-left: 0.8em;
@@ -513,4 +534,93 @@ footer h1{
 #Apropos a, #nos_hebergements a, #assistance a{
     text-decoration: none;
     color:black;
+    line-height: 2em;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 376px){
+    body{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    
+/* MEDIA QUERIES HEADER */
+    header{
+        margin: 1.5em;
+    }
+    
+    header ul{
+        float: left;
+        margin-left: 0;
+        padding-left:0;
+        flex-direction: row;
+    }
+    
+    header logo-img{
+        width: 100%;
+    }
+    
+    header li:nth-child(1) > a{
+        border-bottom: solid #0065FC;
+        padding-bottom: 1em;
+        border-top:none;
+    }
+    
+    #filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    header h3{
+        width:100%;
+    }
+    
+/* MEDIA QUERIES SECTION 1 */
+    #section1 .logements_section1{
+        width: 100%;
+        height: 20%;
+    }
+    
+    #section1{
+        background-color: white;
+        width: 100%;
+        margin:0;
+    }
+  
+/* MEDIA QUERIES SECTION 2 */
+    #section2{
+        border-radius:0;
+        margin: 0;
+    }
+    
+/* MEDIA QUERIES SECTIONS 1 & 2 */ 
+    #sections1_2{
+        margin: 0;
+    }
+  
+/* MEDIA QUERIES SECTIONS 1 2 3 */
+    #sections1_2_3{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+/* MEDIA QUERIES FOOTER */
+    
+    footer h1{
+        width: 100%;
+    }
+    
+    #liensfooter{
+        flex-direction: column;
+        margin: 1em;
+    }
+    
+    footer #Apropos, footer #nos_hebergements, footer #assistance{
+        width: 100%;
+    }
+    
 }
