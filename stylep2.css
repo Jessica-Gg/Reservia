@@ -43,6 +43,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     float: right;
+    margin-right: 2em;
 }
 
 nav li{
@@ -53,6 +54,8 @@ nav a{
     text-decoration: none;
     color: #0065FC;
     font-size:1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 nav a:hover{
@@ -91,7 +94,7 @@ header h1{
 }
 
 header h2{
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
 }
 
@@ -110,7 +113,7 @@ header h2{
 }
 
 .barre_recherche i.fas{
-    background-color: #DEEBFF;
+    background-color: #EFEFEF;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
     padding: 0.8em;
@@ -126,11 +129,13 @@ header h2{
     border:none;
     font-weight: bold;
     margin:0;
+    font-family: 'Raleway';
+
 }
 
 .textsearch{
     border-style:solid;
-    border-color: #DEEBFF;
+    border-color: #EFEFEF;
     border-right: none;
     margin:0;
     height: 3em;
@@ -138,6 +143,8 @@ header h2{
     padding-left: 1em;
     margin-right: -3em;
     font-weight: bold;
+    font-family: 'Raleway';
+
 }
 
 #barre_recherche, #filtres{
@@ -149,9 +156,13 @@ header h2{
     display: inline;
 }
 
+#filtresimg{
+    margin-left: 2em;
+}
+
 .buttonfiltre{
     border-radius:2em;
-    font-weight: bold;
+    font-weight: 600;
     font-size:1em;
     height: 2.5em;
     width: auto;
@@ -161,24 +172,33 @@ header h2{
     border-style: solid;
     border-color: lightgray;
     padding-left: 3em;
-    padding-right: 0.8em;
+    padding-right: 0.5em;
+    padding-top: 0.1em;
+    font-family: 'Raleway';
 }
 
 #filtres i.fas{
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 0.7em;
+    padding: 0.8em;
     align-content: center;
     border-radius: 2em;
     height: 1em;
     width: 1em;
     position: relative;
     margin-right: -3em;
+
+}
+
+#filtres > div:nth-child(4) > i, #filtres > div:nth-child(5) > i{
+    margin-right:-3.1em;
 }
 
 #filtres > div:nth-child(3) > i{
-    padding-left: 0.9em;
-    padding-right: 0.9em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right:-3.1em;
+
 }
 
 header h3{
@@ -229,13 +249,25 @@ header h3{
     border-top-right-radius: 1em;
 }
 
-h3 a{
-    font-size: 1em;
+h4 a{
+    font-size: 1.1em;
     font-weight: bold;
     color: black;
     text-decoration: none;
-    padding-left: 2em;
-    margin-top: 0.5em;
+    padding-left: 1em;
+}
+
+#images_section1 > h4{
+    padding-top:1.5em;
+    font-size : 0.9em;
+    text-align: left;
+    margin:0;   
+}
+
+#images_section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .textimg1{
@@ -247,15 +279,13 @@ h3 a{
 }
 
 .logements_section1{
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin: 0.8em;
     background-color: white;
     padding: 0.2em;
     border-radius: 1em;
     box-shadow: 0em 0.2em 0.2em #AAAAAA;
-    justify-content: space-around;
     width : 28%;
     height: 38%;
 }
@@ -298,7 +328,7 @@ h3 a{
 }
 
 #section1, #section2{
-    background-color: #DEEBFF;
+    background-color: #EFEFEF;
     border-radius : 2em;
     padding: 1em;
     margin: 1em;
@@ -322,12 +352,18 @@ h3 a{
 }
 
 #section1 h3, #section2 h3{
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: left;
     margin:0;
     padding-top: 0.3em;
     font-weight:400;
 }
+
+#sections1_2_3{
+    display: flex;
+    flex-direction: column;
+}
+    
 
 /* SECTION 2 */
 #section2{
@@ -465,7 +501,7 @@ footer{
     display: flex;
     flex-direction: row;
     padding-top: 1.5em;
-    background-color: #DEEBFF;    
+    background-color: #EFEFEF;    
 }
 
 #liensfooter{
@@ -512,7 +548,7 @@ footer h1{
     padding-left: 1em;
 }
 
-€liste_nos_hebergements{
+#liste_nos_hebergements{
     display: flex;
     justify-content: space-between;
 }
@@ -539,23 +575,23 @@ footer h1{
 
 /* MEDIA QUERIES */
 
+/* RESPONSIVE Iphone8 */
+
 @media screen and (max-width: 376px){
-    body{
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-    }
+   
     
-/* MEDIA QUERIES HEADER */
+/* MRESPONSIVE Iphone8 HEADER */
     header{
         margin: 1.5em;
     }
     
     header ul{
         float: left;
-        margin-left: 0;
+        margin: 0;
+        margin-bottom: 2em;
         padding-left:0;
         flex-direction: row;
+        flex-wrap: wrap-reverse;
     }
     
     header logo-img{
@@ -568,6 +604,17 @@ footer h1{
         border-top:none;
     }
     
+    header li:nth-child(2) > a{
+        border-bottom: solid gray;
+        padding-bottom: 1em;
+        margin :0;
+    }
+    
+    header li:nth-child(3) > a{
+        align-self: flex-end;
+    }
+    
+    
     #filtres{
         display: flex;
         flex-direction: row;
@@ -578,7 +625,7 @@ footer h1{
         width:100%;
     }
     
-/* MEDIA QUERIES SECTION 1 */
+/* RESPONSIVE Iphone8 SECTION 1 */
     #section1 .logements_section1{
         width: 100%;
         height: 20%;
@@ -590,25 +637,20 @@ footer h1{
         margin:0;
     }
   
-/* MEDIA QUERIES SECTION 2 */
+/* RESPONSIVE Iphone8 SECTION 2 */
     #section2{
         border-radius:0;
         margin: 0;
     }
     
-/* MEDIA QUERIES SECTIONS 1 & 2 */ 
+/* RESPONSIVE Iphone8 SECTIONS 1 & 2 */ 
     #sections1_2{
         margin: 0;
     }
   
-/* MEDIA QUERIES SECTIONS 1 2 3 */
-    #sections1_2_3{
-        display: block;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-/* MEDIA QUERIES FOOTER */
+/* RESPONSIVE Iphone8 SECTIONS 1 2 3 */
+  
+/* RESPONSIVE Iphone8 FOOTER */
     
     footer h1{
         width: 100%;
