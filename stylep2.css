@@ -1,4 +1,4 @@
-/* BODY */
+/* ------------------------BODY-------------------- */
 body{
     font-family: 'Raleway', sans-serif;
     margin:0;
@@ -7,7 +7,7 @@ body{
     height: 100vh;
 }
 
-/* HEADER */
+/* -----------------------HEADER------------------- */
 
 header{
     display: flex;
@@ -234,7 +234,7 @@ header h3{
     font-size : 0.7em;
 }
 
-/* SECTION 1 */
+/* ---------------------SECTION 1------------------ */
 
 #section1{
     flex: 2;
@@ -295,7 +295,7 @@ h4 a{
     width: 100%;
 }
 
-/* Selecteurs de notation en etoiles*/
+/* --------Selecteurs de notation en etoiles--------*/
 
 .rating{
     display: flex;
@@ -317,7 +317,7 @@ h4 a{
     cursor: pointer;
 }
 
-/* SECTIONS 1 ET 2 */
+/* ---------------SECTIONS 1 ET 2------------------ */
 
 #sections1_2{
     display: flex;
@@ -367,7 +367,7 @@ h4 a{
 }
     
 
-/* SECTION 2 */
+/* ---------------------SECTION 2------------------ */
 #section2{
     flex: 1;
 }
@@ -425,7 +425,7 @@ h4 a{
 
 
 
-/* SECTION 3 */
+/* ---------------------SECTION 3------------------ */
 #section3{
     display: flex;
     flex-direction: row;
@@ -495,7 +495,7 @@ h4 a{
     justify-content: space-around;
 }
 
-/* FOOTER */
+/* ----------------------FOOTER-------------------- */
 footer{
     display: flex;
     flex-direction: row;
@@ -564,7 +564,7 @@ footer h1{
     line-height: 2em;
 }
 
-/* MEDIA QUERIES */
+/* ------------------MEDIA QUERIES----------------- */
 
 @media (min-width: 376px){
     .barre_recherche i.fa-search{
@@ -576,12 +576,12 @@ footer h1{
     }
 }
 
-/* RESPONSIVE Iphone8 */
+/* ----------------RESPONSIVE Iphone8-------------- */
 
 @media screen and (max-width: 376px){
    
     
-/* MRESPONSIVE Iphone8 HEADER */
+/* RESPONSIVE Iphone8 HEADER */
     header{
         margin: 1em;
     }
@@ -638,7 +638,7 @@ footer h1{
     
     .textsearch{
         width:17em;
-        margin-right: -0.5em;
+        margin-right: -1em;
     }
     
     header h1{
@@ -749,7 +749,7 @@ footer h1{
     
 }
 
-/* RESPONSIVE iPad */ 
+/* ---------------RESPONSIVE iPad------------------ */ 
 @media only screen
   and (min-device-width : 768px)
   and (max-device-width : 1024px){
@@ -772,11 +772,13 @@ footer h1{
      .logements_section1{
         width: 45%;
     }
+      
 /* RESPONSIVE Ipad SECTION 1 & 2 */
      #sections1_2{
         flex-direction: column-reverse;
         margin: 0;
     }
+      
 /* RESPONSIVE Ipad SECTION 2 */
      .logements_section2{
         height:10em;
@@ -799,6 +801,7 @@ footer h1{
       #image_section2 > div:nth-child(2) > div > div > a{
           padding-top: 1em;
       }
+      
 /* RESPONSIVE Ipad SECTION 3 */
       #Blocs_s3{
           justify-content: center;
