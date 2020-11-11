@@ -748,3 +748,60 @@ footer h1{
     }
     
 }
+
+/* RESPONSIVE iPad */ 
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px){
+    
+/* RESPONSIVE iPad HEADER */
+     #filtres{
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+      header h3{
+          width: 100%;
+      }
+      
+      nav ul{
+          margin-right:0;
+      }
+    
+/* RESPONSIVE Ipad SECTION 1 */
+     .logements_section1{
+        width: 45%;
+    }
+/* RESPONSIVE Ipad SECTION 1 & 2 */
+     #sections1_2{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+/* RESPONSIVE Ipad SECTION 2 */
+     .logements_section2{
+        height:10em;
+        width: 30%;
+        margin: 0.5em;
+    }
+
+     #image_section2{
+        display: flex;
+      }
+      
+     #section2 img{
+        width:50%;  
+      }
+      
+      .textimgs2{
+        padding-right: 1em;  
+      }
+      
+      #image_section2 > div:nth-child(2) > div > div > a{
+          padding-top: 1em;
+      }
+/* RESPONSIVE Ipad SECTION 3 */
+      #Blocs_s3{
+          justify-content: center;
+      }
+    
+}
