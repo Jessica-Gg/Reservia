@@ -1,4 +1,7 @@
-/* ------------------------BODY-------------------- */
+  /* ---------------------------------------------------------------- */
+ /* ----------------------------BODY-------------------------------- */
+/* ---------------------------------------------------------------- */
+
 body{
     font-family: 'Raleway', sans-serif;
     margin:0;
@@ -7,43 +10,28 @@ body{
     height: 100vh;
 }
 
-/* -----------------------HEADER------------------- */
+  /* ---------------------------------------------------------------- */
+ /* ------------------------------HEADER---------------------------- */
+/* ---------------------------------------------------------------- */
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin: 2.5em;
     margin-top: 1.5em;
-    margin-bottom:1.5em;
+    margin-bottom:1em;
 }
 
-#logo{
-    display: inline;
-    width: 100%;
-}
-
-#logo_img, #nav{
-    display: inline;
-}
-
-#logo_img{
-    float: left;
-}
-
-/* HEADER liens de navigation */
+/* ------HEADER liens de navigation------ */
 
 nav {
     width: 100%;
+    margin-top: -3em;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     float: right;
-    margin-right: 2em;
+    margin-right: 1.5em;
 }
 
 nav a{
@@ -60,7 +48,7 @@ nav a:hover{
 
 header li:nth-child(1)> a{
     border-top: solid #0065FC;
-    padding-top: 2.3em;
+    padding-top: 2em;
 }
 
 nav a:visited{
@@ -71,7 +59,7 @@ header li:nth-child(3) > a{
     font-weight: bold;
 }
 
-/* Header titres*/
+/* ------Header titres------ */
 
 #titre_principal{
     display: flex;
@@ -85,21 +73,23 @@ header img{
 }
 
 header h1{
-    font-size: 1.5em;
+    margin-top:1.5em;
+    margin-bottom : 0.4em;
+    font-size: 1.2em;
     font-weight: bold;  
 }
 
 header h2{
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: 400;
 }
 
 
-/* HEADER Barre de recherche et filtres */
+/* ------HEADER Barre de recherche et filtres------ */
 
 .barre_recherche{
-    display: inline-block;
     margin: 1em;
+    margin-top: 0em;
     margin-left: 0em;
     
 }
@@ -141,6 +131,7 @@ header h2{
     font-weight: bold;
     font-family: 'Raleway';
     font-size: 0.9em;
+    margin-right: -0.5em;
 
 }
 
@@ -148,7 +139,8 @@ header h2{
     width:100%;
 }
 
-/* HEADER Filtres */
+/* ------HEADER Filtres------ */
+
 #filtres input, #filtres i.fas, #filtres h3, .filtresimg{
     display: inline;
 }
@@ -172,7 +164,7 @@ header h2{
     padding-right: 1em;
     padding-top: 0.1em;
     font-family: 'Raleway';
-    margin-right: 1em;
+    margin-right: 1.3em;
 }
 
 #filtres i.fas{
@@ -204,12 +196,10 @@ header h3{
     padding-right: 2em;  
 }
 
-/* HEADER 3eme ligne */
+/* ------HEADER 3eme ligne------ */
 
 #titreinfo{
-    display: inline;
-    width: 100%;
-    margin-top: 1em;
+    margin-top: 1.2em;
 }
 
 #titreinfo i.fas, #titreinfo h2{
@@ -218,6 +208,7 @@ header h3{
 
 #titreinfo h2{
     padding-top: 1em;
+    font-size: 0.9em;
 }
 
 
@@ -232,9 +223,12 @@ header h3{
     float: left;
     margin-right: 1em;
     font-size : 0.7em;
+    margin-top:-0.4em;
 }
 
-/* ---------------------SECTION 1------------------ */
+  /* ---------------------------------------------------------------- */
+ /* -----------------------------SECTION 1-------------------------- */
+/* ---------------------------------------------------------------- */
 
 #section1{
     flex: 2;
@@ -247,7 +241,7 @@ header h3{
     border-top-right-radius: 1em;
 }
 
-h4 a{
+h5 a{
     font-size: 1em;
     font-weight: bold;
     color: black;
@@ -255,7 +249,7 @@ h4 a{
     padding-left: 1em;
 }
 
-#section1 h4{
+#section1 h5{
     font-size : 1em;
     text-align: left;
     margin:0;   
@@ -263,7 +257,6 @@ h4 a{
 
 #images_section1{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
@@ -280,22 +273,25 @@ h4 a{
 .logements_section1{
     display: flex;
     flex-direction: column;
-    margin: 0.5em;
     margin-top: 0em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     background-color: white;
-    padding: 0.2em;
+    padding: 0.3em;
+    padding-bottom: 0em;
     border-radius: 1em;
-    box-shadow: 0em 0.2em 0.2em #AAAAAA;
-    width : 30%;
-    height: 12em;
+    box-shadow: 0.2em 0.2em 0.5em #C9C9C9;
+    width : 28%;
 }
 
-#section1 h1{
+#section1 h2{
     width: 100%;
+    margin-bottom:0;
 }
 
-/* --------Selecteurs de notation en etoiles--------*/
+  /* ---------------------------------------------------------------- */
+ /* -----------------SELECTEUR DE NOTATION EN ETOILES----------------*/
+/* ---------------------------------------------------------------- */
+
 
 .rating{
     display: flex;
@@ -317,11 +313,12 @@ h4 a{
     cursor: pointer;
 }
 
-/* ---------------SECTIONS 1 ET 2------------------ */
+  /* ---------------------------------------------------------------- */
+ /* -------------------------SECTIONS 1 ET 2------------------------ */
+/* ---------------------------------------------------------------- */
 
 #sections1_2{
     display: flex;
-    flex-direction: row;
     margin: 1.5em;
     margin-top: 0;
 }
@@ -336,14 +333,14 @@ h4 a{
     align-items: baseline;
 }
 
-#section1 h1, #section2 h1, #section3 h1{
+#section1 h2, #section2 h2, #section3 h2{
     font-size:1.2em; 
     text-align: left;
     font-weight: bold;
     padding-left: 1em;
 }
 
-#section1 h2, #section2 h2{
+#section1 h3, #section2 h3{
     font-size: 0.9em;
     text-align: left;
     font-weight:bold;
@@ -351,11 +348,11 @@ h4 a{
     padding-left: 0.2em;
 }
 
-#section1 h3, #section2 h3{
+#section1 h4, #section2 h4{
     font-size: 0.8em;
     text-align: left;
     margin:0;
-    padding-top: 0.3em;
+    padding-top: 0.5em;
     font-weight:400;
     padding-left: 0.2em;
 
@@ -366,13 +363,15 @@ h4 a{
     flex-direction: column;
 }
     
+  /* ---------------------------------------------------------------- */
+ /* ---------------------------SECTION 2---------------------------- */
+/* ---------------------------------------------------------------- */
 
-/* ---------------------SECTION 2------------------ */
 #section2{
     flex: 1;
 }
 
-#titre_s2 i, #titre_s2 h1{
+#titre_s2 i, #titre_s2 h2{
     display: inline;
 }
 
@@ -393,10 +392,10 @@ h4 a{
     margin: 1em;
     margin-bottom : 1.5em;
     background-color: white;
-    border-radius: 1.5em;
+    border-radius: 1em;
     padding-left: 0.3em;
     align-items: center;
-    box-shadow: 0em 0.2em 0.2em #AAAAAA;
+    box-shadow: 0.2em 0.2em 0.5em #C9C9C9;
     width : 90%;
     height: 25%;
 }
@@ -406,16 +405,16 @@ h4 a{
     width: 40%;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 
 .textimgs2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: baseline;
     padding-left: 1em;
-    padding-bottom: 1em;
     padding-right: 1.5em;
-    padding-top: 1.5em;
 }
 
 #image_section2 > div a{
@@ -424,8 +423,10 @@ h4 a{
 }
 
 
+  /* ---------------------------------------------------------------- */
+ /* ----------------------------SECTION 3--------------------------- */
+/* ---------------------------------------------------------------- */
 
-/* ---------------------SECTION 3------------------ */
 #section3{
     display: flex;
     flex-direction: row;
@@ -435,11 +436,11 @@ h4 a{
     justify-content: center;
 }
 
-#section3 h1{
+#section3 h2{
     width: 100%;
 }
 
-#section3 h2{
+#section3 h3{
     font-size: 0.9em;
     font-weight: bold;
     align-items: flex-start;
@@ -457,7 +458,7 @@ h4 a{
     margin: 1em;
     background-color: white;
     border-radius: 1em; 
-    box-shadow: 0em 0.2em 0.2em #AAAAAA;
+    box-shadow: 0.2em 0.2em 0.5em #C9C9C9;
     margin-top: 0;
 }
 
@@ -473,7 +474,7 @@ h4 a{
     flex-wrap: wrap;
 }
 
-/* Section 3 Bloc 1*/
+/* ------Section 3 Bloc 1------*/
 .bloc1 img{
     max-height: 25em;
     max-width: 17em;
@@ -483,7 +484,7 @@ h4 a{
     align-items: stretch;
 }
 
-/* Section 3 Bloc 2 */
+/* ------Section 3 Bloc 2------ */
 .bloc2 img{
     max-height: 15em;
     max-width: 17em;
@@ -494,8 +495,10 @@ h4 a{
     flex-direction: column;
     justify-content: space-around;
 }
+  /* ---------------------------------------------------------------- */
+ /* -----------------------------FOOTER----------------------------- */
+/* ---------------------------------------------------------------- */
 
-/* ----------------------FOOTER-------------------- */
 footer{
     display: flex;
     flex-direction: row;
@@ -519,7 +522,7 @@ footer ul{
     margin-top: 0em;
 }
 
-footer h1{
+footer h2{
     font-size: 1.3em;
     padding-left: 0.8em;
 }
@@ -565,8 +568,9 @@ footer h1{
 }
 
 
-
-/* ------------------MEDIA QUERIES----------------- */
+  /* ---------------------------------------------------------------- */
+ /* -------------------------MEDIA QUERIES-------------------------- */
+/* ---------------------------------------------------------------- */
 
 @media (min-width: 479px){
     .barre_recherche i.fa-search{
@@ -578,28 +582,35 @@ footer h1{
     }
 }
 
-/* ----------------RESPONSIVE Iphone8-------------- */
+  /* ---------------------------------------------------------------- */
+ /* ---------------------RESPONSIVE TEL.PORTABLES------------------- */
+/* ---------------------------------------------------------------- */
 
 @media screen and (max-width: 479px){
-   
+     
+/* ------RESPONSIVE TEL.PORTABLES HEADER------ */
     
-/* RESPONSIVE Iphone8 HEADER */
     header{
-        margin: 1em;
+        margin: 0em;
     }
     
     header ul{
-        float: left;
         margin: 0;
         margin-bottom: 2em;
         padding-left:0;
-        flex-direction: row;
         flex-wrap: wrap-reverse;
+        justify-content: flex-end;
     }
     
-    header logo-img{
-        width: 100%;
+    header nav{
+        margin-top:0;
     }
+    
+    #logo{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
     
     header li:nth-child(1) > a{
         border-bottom: solid #0065FC;
@@ -614,8 +625,8 @@ footer h1{
         margin :0;
     }
     
-    header li:nth-child(3) > a{
-        float: right;
+    header li:nth-child(3){
+        margin-top:-2em;
     }
     
     header .buttonrecherche{
@@ -623,7 +634,7 @@ footer h1{
     }
     
     .barre_recherche{
-        margin-right:0;
+        margin:1em;
         width: 100%;
     }
     
@@ -662,7 +673,8 @@ footer h1{
         width:100%;
     }
     
-/* RESPONSIVE Iphone8 SECTION 1 */
+/* ------RESPONSIVE TEL.PORTABLES SECTION 1------ */
+    
     #section1 .logements_section1{
         width: 100%;
         height: 12em;
@@ -676,20 +688,25 @@ footer h1{
         width: auto;
     }
     
-    #section1 h1{
+    #section1 h2{
         margin-bottom: 1em;
         padding:0;
     }
     
-    h4 a{
+    h5 a{
         padding: 0;
     }
   
-/* RESPONSIVE Iphone8 SECTION 2 */
+/* ------RESPONSIVE TEL.PORTABLES SECTION 2------ */
+    
     #section2{
         border-radius:0;
         margin: 0;
         flex:1;
+    }
+    
+    #section2 img{
+        padding:0;
     }
     
     #section2 .logements_section2{
@@ -697,7 +714,8 @@ footer h1{
         padding-bottom: 0.3em;
     }
     
-/* RESPONSIVE Iphone8 SECTIONS 1 & 2 */ 
+/* ------RESPONSIVE TEL.PORTABLES SECTIONS 1 & 2------ */ 
+    
     #sections1_2{
         margin: 0;
         flex-direction: column-reverse;
@@ -707,14 +725,15 @@ footer h1{
         padding:0;
     }
   
-/* RESPONSIVE Iphone8 SECTIONS 3 */
+/* ------RESPONSIVE TEL.PORTABLES SECTIONS 3------ */
+    
     #section3 .activites{
         width: 100%;
         margin: 0;
         margin-bottom: 1.5em;  
     }
     
-    #section3 h1{
+    #section3 h2{
         padding: 0;
     }
     
@@ -735,9 +754,9 @@ footer h1{
         display: none;
     }
     
-/* RESPONSIVE Iphone8 FOOTER */
+/* ------RESPONSIVE TEL.PORTABLES FOOTER----- */
     
-    footer h1{
+    footer h2{
         width: 100%;
     }
     
@@ -752,12 +771,16 @@ footer h1{
     
 }
 
-/* ---------------RESPONSIVE TABLETTE------------------ */ 
+  /* ---------------------------------------------------------------- */
+ /* -----------------------RESPONSIVE TABLETTE---------------------- */ 
+/* ---------------------------------------------------------------- */
+
 @media only screen
   and (min-device-width : 480px)
   and (max-device-width : 959px){
     
-/* RESPONSIVE TABLETTE HEADER */
+/* ------RESPONSIVE TABLETTE HEADER------ */
+      
       #filtres{
          display: flex;
          flex-wrap: wrap;
@@ -774,19 +797,28 @@ footer h1{
       nav ul{
           margin-right:0;
       }
+      
     
-/* RESPONSIVE TABLETTE SECTION 1 */
+/* ------RESPONSIVE TABLETTE SECTION 1------ */
+      
      .logements_section1{
           width: 45%;
+          height: 12em;
     }
       
-/* RESPONSIVE TABLETTE SECTION 1 & 2 */
+      #section1 h2{
+          margin-bottom : 0.5em;
+      }
+      
+/* ------RESPONSIVE TABLETTE SECTION 1 & 2------ */
+      
      #sections1_2{
           flex-direction: column-reverse;
           margin: 0;
     }
       
-/* RESPONSIVE TABLETTE SECTION 2 */
+/* ------RESPONSIVE TABLETTE SECTION 2------ */
+      
      .logements_section2{
           height:10em;
           width: 30%;
@@ -809,20 +841,22 @@ footer h1{
           padding-top: 1em;
       }
       
-/* RESPONSIVE TABLETTE SECTION 3 */
+/* ------RESPONSIVE TABLETTE SECTION 3------ */
+      
       #Blocs_s3{
           justify-content: center;
       }
        
 }
-
-/* --------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS------ */
+  /* ---------------------------------------------------------------- */
+ /* ----------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS---------- */
+/* ---------------------------------------------------------------- */
 
 @media only screen
   and (min-device-width : 960px)
     and (max-device-width : 1280px){
        
-/* RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS HEADER */
+/* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS HEADER------ */
         
         #filtres{
            flex-wrap: wrap;
@@ -832,7 +866,7 @@ footer h1{
             margin-right:0;
       }
         
-/* RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 1 */
+/* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 1------ */
 
         .logements_section1{ 
             width: 30%;
@@ -842,17 +876,20 @@ footer h1{
         
     }
         
-        #section1 h4{
+        #section1 h5{
             margin: 1em;
         }
       
-/* RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 1 & 2 */
+/* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 1 & 2------ */
+        
+        
         #sections1_2{
             flex-direction: column-reverse;
             margin: 0; 
     }
       
-/* RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 2 */
+/* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 2------ */
+        
         .logements_section2{
             height:10em;
             width: 30%;
@@ -881,7 +918,8 @@ footer h1{
           
       }
         
-/* RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 3 */
+/* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 3------ */
+        
         #Blocs_s3{
             justify-content: center;
       }
@@ -890,7 +928,7 @@ footer h1{
             max-width: 13em;
         }
         
-        #section3 h2{
+        #section3 h3{
             padding-left: 0.5em;
         }
 }
