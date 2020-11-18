@@ -151,7 +151,7 @@ header h2{
 
 .buttonfiltre{
     border-radius:2em;
-    font-weight: 600;
+    font-weight: 900;
     font-size:1em;
     height: 2.5em;
     width: auto;
@@ -164,12 +164,13 @@ header h2{
     padding-right: 1em;
     padding-top: 0.1em;
     font-family: 'Raleway';
-    margin-right: 1.3em;
+    margin-right: 1.5em;
 }
 
 .buttonfiltre:hover{
     color: #0065FC;
     border-color: #DEEBFF;
+    background-color: #DEEBFF;
 }
 
 #filtres i.fas{
@@ -584,7 +585,7 @@ footer h2{
 }
 
 #liensfooter a:hover{
-    color: #0065FC;
+    color: grey;
 }
 
 
@@ -602,11 +603,20 @@ footer h2{
     }
 }
 
+@media screen and (max-device-width: 320px){
+    .textsearch{
+        width:65%;
+        margin-right: -1em;
+        font-size: 1em;
+    }
+    
+}
+
   /* ---------------------------------------------------------------- */
  /* ---------------------RESPONSIVE TEL.PORTABLES------------------- */
 /* ---------------------------------------------------------------- */
 
-@media screen and (max-width: 479px){
+@media screen and (max-device-width: 479px){
      
 /* ------RESPONSIVE TEL.PORTABLES HEADER------ */
     
@@ -909,7 +919,7 @@ footer h2{
             justify-content: center;
             padding-right: 0.5em;
             padding-left: 0.5em;
-            padding-top:0;
+            padding-top: 0.5em;
         
     }
         
