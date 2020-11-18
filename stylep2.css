@@ -48,7 +48,7 @@ nav a:hover{
 
 header li:nth-child(1)> a{
     border-top: solid #0065FC;
-    padding-top: 2em;
+    padding-top: 2.4em;
 }
 
 nav a:visited{
@@ -231,7 +231,7 @@ header h3{
 /* ---------------------------------------------------------------- */
 
 #section1{
-    flex: 2;
+    flex: 2.5;
 }
 
 #section1 img{ 
@@ -252,7 +252,8 @@ h5 a{
 #section1 h5{
     font-size : 1em;
     text-align: left;
-    margin:0;   
+    margin-top:0.5em;
+    margin-bottom:1em;
 }
 
 #images_section1{
@@ -285,7 +286,7 @@ h5 a{
 
 #section1 h2{
     width: 100%;
-    margin-bottom:0;
+    margin-bottom: 0.5em;
 }
 
   /* ---------------------------------------------------------------- */
@@ -308,7 +309,7 @@ h5 a{
 .rating a:hover,
 .rating a:hover ~ a,
 .rating a:focus,
-.rating a:focus ~ a {	
+.rating a:focus ~ a{	
     color: blue;
     cursor: pointer;
 }
@@ -330,7 +331,6 @@ h5 a{
     margin: 1em;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 #section1 h2, #section2 h2, #section3 h2{
@@ -384,6 +384,7 @@ h5 a{
 #titre_s2{
     width: 100%;
     margin-top:1em;
+    margin-bottom: 0.5em;
 }
 
 .logements_section2{
@@ -391,13 +392,14 @@ h5 a{
     flex-direction: row;
     margin: 1em;
     margin-bottom : 1.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     background-color: white;
     border-radius: 1em;
     padding-left: 0.3em;
     align-items: center;
     box-shadow: 0.2em 0.2em 0.5em #C9C9C9;
-    width : 90%;
-    height: 25%;
+    height: 28%;
 }
 
 #section2 img{
@@ -567,6 +569,10 @@ footer h2{
     line-height: 2em;
 }
 
+#liensfooter a:hover{
+    color: grey;
+}
+
 
   /* ---------------------------------------------------------------- */
  /* -------------------------MEDIA QUERIES-------------------------- */
@@ -591,26 +597,27 @@ footer h2{
 /* ------RESPONSIVE TEL.PORTABLES HEADER------ */
     
     header{
-        margin: 0em;
-    }
-    
-    header ul{
-        margin: 0;
-        margin-bottom: 2em;
-        padding-left:0;
-        flex-wrap: wrap-reverse;
-        justify-content: flex-end;
-    }
-    
-    header nav{
-        margin-top:0;
+        margin: 1em;
     }
     
     #logo{
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-      }
+    }
+    
+    header ul{
+        margin: 0;
+        margin-bottom: 2em;
+        padding-left:0;
+        justify-content: flex-end;
+        margin-right: -1em;
+        margin-left: -2em;
+    }
+    
+    header nav{
+        margin-top:0;
+    }
     
     header li:nth-child(1) > a{
         border-bottom: solid #0065FC;
@@ -629,12 +636,17 @@ footer h2{
         margin-top:-2em;
     }
     
+    header li:nth-child(1), header li:nth-child(2){
+        margin-top: 1.5em;
+        flex-grow: 1;
+    }
+    
     header .buttonrecherche{
         display: none;
     }
     
     .barre_recherche{
-        margin:1em;
+        margin-top:1em;
         width: 100%;
     }
     
@@ -648,11 +660,14 @@ footer h2{
     .barre_recherche i.fa-map-marker-alt{
         padding-left: 1.2em;
         padding-right: 1.2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     
     .textsearch{
-        width:65%;
+        width:70%;
         margin-right: -1em;
+        font-size: 1em;
     }
     
     header h1{
@@ -820,9 +835,12 @@ footer h2{
 /* ------RESPONSIVE TABLETTE SECTION 2------ */
       
      .logements_section2{
-          height:10em;
-          width: 30%;
+          height:15em;
+          width: 33%;
           margin: 0.5em;
+          flex-direction: column;
+          padding-right: 0.3em;
+          align-items: flex-start;
     }
 
      #image_section2{
@@ -830,14 +848,22 @@ footer h2{
       }
       
      #section2 img{
-          width:50%;  
+         width:100%;
+         border-top-right-radius: 1em;
+         border-bottom-left-radius: 0em;
+         height: 60%;
       }
       
       .textimgs2{
-          padding-right: 1em;  
+         padding: 0em;
+         padding-left: 0.5em;
       }
       
       #image_section2 > div:nth-child(2) > div > div > a{
+          padding-top: 0em;
+      }
+      
+      #image_section2 > div a{
           padding-top: 1em;
       }
       
@@ -873,6 +899,7 @@ footer h2{
             justify-content: center;
             padding-right: 0.5em;
             padding-left: 0.5em;
+            padding-top:0;
         
     }
         
