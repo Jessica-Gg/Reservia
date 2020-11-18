@@ -99,7 +99,7 @@ header h2{
 }
 
 .barre_recherche i.fa-map-marker-alt{
-    background-color: #EFEFEF;
+    background-color: #F2F2F2;
     border-top-left-radius: 0.7em;
     border-bottom-left-radius: 0.7em;
     padding: 0.9em;
@@ -122,7 +122,7 @@ header h2{
 
 .textsearch{
     border-style:solid;
-    border-color: #EFEFEF;
+    border-color: #F2F2F2;
     border-right: none;
     margin:0;
     height: 3em;
@@ -165,6 +165,11 @@ header h2{
     padding-top: 0.1em;
     font-family: 'Raleway';
     margin-right: 1.3em;
+}
+
+.buttonfiltre:hover{
+    color: #0065FC;
+    border-color: #DEEBFF;
 }
 
 #filtres i.fas{
@@ -234,6 +239,11 @@ header h3{
     flex: 2.5;
 }
 
+.cartesS1{
+    text-decoration: none;
+    color: black;
+}
+
 #section1 img{ 
     height: 60%;
     width: 100%;
@@ -272,7 +282,6 @@ h5 a{
 }
 
 .logements_section1{
-    display: flex;
     flex-direction: column;
     margin-top: 0em;
     margin-bottom: 1.5em;
@@ -325,7 +334,7 @@ h5 a{
 }
 
 #section1, #section2{
-    background-color: #EFEFEF;
+    background-color: #F2F2F2;
     border-radius : 1.5em;
     padding: 1em;
     margin: 1em;
@@ -438,6 +447,11 @@ h5 a{
     justify-content: center;
 }
 
+#section3 a{
+    text-decoration: none;
+    color: black;
+}
+
 #section3 h2{
     width: 100%;
 }
@@ -505,7 +519,7 @@ footer{
     display: flex;
     flex-direction: row;
     padding-top: 1.5em;
-    background-color: #EFEFEF;    
+    background-color: #F2F2F2;    
 }
 
 #liensfooter{
@@ -570,7 +584,7 @@ footer h2{
 }
 
 #liensfooter a:hover{
-    color: grey;
+    color: #0065FC;
 }
 
 
@@ -724,10 +738,6 @@ footer h2{
         padding:0;
     }
     
-    #section2 .logements_section2{
-        padding-top: 0.3em;
-        padding-bottom: 0.3em;
-    }
     
 /* ------RESPONSIVE TEL.PORTABLES SECTIONS 1 & 2------ */ 
     
@@ -905,7 +915,7 @@ footer h2{
         
         #section1 h5{
             margin: 1em;
-        }
+    }
       
 /* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS SECTION 1 & 2------ */
         
