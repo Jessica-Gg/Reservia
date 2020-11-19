@@ -603,7 +603,7 @@ footer h2{
     }
 }
 
-@media screen and (max-device-width: 320px){
+@media screen and (max-width: 320px){
     .textsearch{
         width:65%;
         margin-right: -1em;
@@ -616,7 +616,7 @@ footer h2{
  /* ---------------------RESPONSIVE TEL.PORTABLES------------------- */
 /* ---------------------------------------------------------------- */
 
-@media screen and (max-device-width: 479px){
+@media screen and (max-width: 479px){
      
 /* ------RESPONSIVE TEL.PORTABLES HEADER------ */
     
@@ -811,8 +811,8 @@ footer h2{
 /* ---------------------------------------------------------------- */
 
 @media only screen
-  and (min-device-width : 480px)
-  and (max-device-width : 959px){
+  and (min-width : 480px)
+  and (max-width : 959px){
     
 /* ------RESPONSIVE TABLETTE HEADER------ */
       
@@ -899,8 +899,8 @@ footer h2{
 /* ---------------------------------------------------------------- */
 
 @media only screen
-  and (min-device-width : 960px)
-    and (max-device-width : 1280px){
+  and (min-width : 960px)
+    and (max-width : 1280px){
        
 /* ------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS HEADER------ */
         
