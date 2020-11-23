@@ -637,6 +637,8 @@ footer h2{
         padding-left:0;
         float: none;
         text-align: center;
+        margin-left: -1em;
+        margin-right: -1em;
     }
     
     header li{
