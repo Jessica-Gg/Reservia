@@ -619,6 +619,10 @@ footer h2{
 
 @media screen and (max-width: 479px){
      
+    #bloc_page{
+        padding: 1%;
+    }
+    
 /* ------RESPONSIVE TEL.PORTABLES HEADER------ */
     
     header{
