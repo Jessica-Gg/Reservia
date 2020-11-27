@@ -196,7 +196,6 @@ header h2{
 
 #filtres > div:nth-child(3) > i{
     padding-left: 1em;
-    padding-right: 1em;
     margin-right:-3.1em;
 
 }
@@ -716,7 +715,7 @@ footer h2{
     }
     
     .buttonfiltre{
-        margin-right: 0.2em;
+        margin-right: 0.5em;
     }
     
     header h3{
