@@ -321,13 +321,29 @@ h5 a{
     padding-top: 0.5em;
 }
 
-.rating i:hover,
-.rating i:hover ~ i,
-.rating i:focus,
-.rating i:focus ~ i{	
-    color: blue;
-    cursor: pointer;
-}
+/* ----- Section 1 ---- */
+/* Image 1 */
+.s1img1 i:nth-child(5), .s1img1 i:nth-child(4), .s1img1 i:nth-child(3),.s1img1 i:nth-child(2),
+/* Image 2*/
+.s1img2 i:nth-child(5), .s1img2 i:nth-child(4), .s1img2 i:nth-child(3), .s1img2 i:nth-child(2), .s1img2 i:nth-child(1),
+/* Image 3 */
+.s1img3 i:nth-child(5), .s1img3 i:nth-child(4),.s1img3 i:nth-child(3),.s1img3 i:nth-child(2), 
+/* Image 4 */
+.s1img4 i:nth-child(5), .s1img4 i:nth-child(4), .s1img4 i:nth-child(3), 
+/* Image 5 */
+.s1img5 i:nth-child(5), .s1img5 i:nth-child(4), .s1img5 i:nth-child(3), .s1img5 i:nth-child(2), 
+/* Image 6 */
+.s1img6 i:nth-child(5), .s1img6 i:nth-child(4), .s1img6 i:nth-child(3), .s1img6 i:nth-child(2), .s1img6 i:nth-child(1), 
+/* ---- Section 2 ---- */
+/* Image 1 */
+.s2img1 i:nth-child(5), .s2img1 i:nth-child(4), .s2img1 i:nth-child(3), .s2img1 i:nth-child(2), .s2img1 i:nth-child(1), 
+/* Image 2 */
+.s2img2 i:nth-child(5), .s2img2 i:nth-child(4), .s2img2 i:nth-child(3), .s2img2 i:nth-child(2), 
+/* Image 3 */
+.s2img3 i:nth-child(5), .s2img3 i:nth-child(4), .s2img3 i:nth-child(3), .s2img3 i:nth-child(2) {
+    color: #0065FC;
+} 
+
 
   /* ---------------------------------------------------------------- */
  /* -------------------------SECTIONS 1 ET 2------------------------ */
@@ -731,6 +747,10 @@ footer h2{
         margin-bottom: 1.5em;
     }
     
+    img.hebergement{
+        object-fit: cover;
+    }
+    
     #section1{
         background-color: white;
         margin:1em;
@@ -770,6 +790,7 @@ footer h2{
         padding-top: 0.5em;
         padding-left: 1.5em;
     }
+    
 /* ------RESPONSIVE TEL.PORTABLES SECTIONS 1 & 2------ */ 
     
     #sections1_2{
@@ -801,14 +822,13 @@ footer h2{
         max-width: 100%;
     }
     
-    img.imgactiv2{
+    img.imgactiv{
         display: flex;
         width: 100%;
+        height: 8em;
+        object-fit: cover;
     }
     
-    img.imgactiv{
-        display: none;
-    }
     
 /* ------RESPONSIVE TEL.PORTABLES FOOTER----- */
     
@@ -832,14 +852,150 @@ footer h2{
     }
     
 }
+  /* ---------------------------------------------------------------- */
+ /* ------------------RESPONSIVE PETITE TABLETTE------------------- */ 
+/* ---------------------------------------------------------------- */
+
+@media only screen
+    and (min-width : 480px)
+    and (max-width: 540px){
+    
+        /* ------RESPONSIVE PETITE TABLETTE HEADER------ */
+            
+      #logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+      header ul{
+        margin: 0;
+        margin-bottom: 2em;
+        padding-left:0;
+        float: none;
+        text-align: center;
+        margin-left: -1.2em;
+        margin-right: -1.2em;
+    }
+    
+      header li{
+        margin-top: 1.5em;
+        width: 50%;
+        padding-bottom: 1.5em;
+        border-bottom: 3px solid lightgrey;
+    }
+    
+      .active{
+        border-color:#0065FC; 
+    }
+    
+      header nav{
+        margin-top:0;
+        width: 100%;
+    }
+    
+      #logo > a{
+        margin-right: 0.5em;
+    }
+    
+      header li:nth-child(1) > a{
+        border-top:none;
+    }
+        
+      #filtres{
+         display: flex;
+         flex-wrap: wrap;
+    }
+      
+      .textsearch{
+          margin-right:-1em;
+      }
+      
+      header h3{
+          width: 100%;
+      }
+      
+      nav ul{
+          margin-right:0;
+      }
+      
+          
+/* ------RESPONSIVE PETITE TABLETTE SECTION 1------ */
+      
+       .logements_section1{
+          width: 45%;
+          height: 12em;
+    }
+      
+      img.hebergement{
+          object-fit: cover;
+
+      }
+      
+      #section1 h2{
+          margin-bottom : 0.5em;
+      }
+      
+/* ------RESPONSIVE PETITE TABLETTE SECTION 1 & 2------ */
+      
+     #sections1_2{
+          flex-direction: column-reverse;
+          margin: 0;
+    }
+      
+/* ------RESPONSIVE PETITE TABLETTE SECTION 2------ */
+      
+     #section2{
+        border-radius:0;
+        margin: 0;
+        flex:1;
+        margin-left: -0.2em;
+        margin-right: -0.2em;
+    }
+    
+    #section2 img{
+        padding:0;
+    }
+    
+    #image_section2{
+        height: 35em;
+        object-fit: cover;
+        }    
+        
+    #image_section2 > div i{
+        padding-top: 5em;
+    }
+    
+    
+    .textimgs2{
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+    }
+    
+      
+/* ------RESPONSIVE PETITE TABLETTE SECTION 3------ */
+             
+    #Blocs_s3{
+          justify-content: center;
+          flex-wrap: nowrap
+      }
+        
+    img.imgactiv{
+        display: flex;
+        width: 100%;
+        height: 8em;
+        object-fit: cover;
+    }     
+        
+}
 
   /* ---------------------------------------------------------------- */
  /* -----------------------RESPONSIVE TABLETTE---------------------- */ 
 /* ---------------------------------------------------------------- */
 
 @media only screen
-  and (min-width : 480px)
-  and (max-width : 959px){
+   and (min-width : 541px)
+   and (max-width : 959px){
     
 /* ------RESPONSIVE TABLETTE HEADER------ */
       
@@ -859,8 +1015,7 @@ footer h2{
       nav ul{
           margin-right:0;
       }
-      
-    
+        
       
 /* ------RESPONSIVE TABLETTE SECTION 1------ */
       
@@ -868,6 +1023,11 @@ footer h2{
           width: 45%;
           height: 12em;
     }
+      
+      img.hebergement{
+          object-fit: cover;
+
+      }
       
       #section1 h2{
           margin-bottom : 0.5em;
@@ -889,6 +1049,7 @@ footer h2{
           flex-direction: column;
           padding-right: 0.3em;
           align-items: flex-start;
+
     }  
       
      #image_section2{
@@ -900,11 +1061,14 @@ footer h2{
          border-top-right-radius: 1em;
          border-bottom-left-radius: 0em;
          height: 60%;
+         object-fit: cover;
       }
       
       .textimgs2{
          padding: 0em;
          padding-left: 0.5em;
+         object-fit: cover;
+
       }
       
       #image_section2 > div:nth-child(2) > div > div > i{
@@ -922,6 +1086,7 @@ footer h2{
       }
        
 }
+        
   /* ---------------------------------------------------------------- */
  /* ----------RESPONSIVE TABLETTE PAYSAGE ET PETITS ECRANS---------- */
 /* ---------------------------------------------------------------- */
